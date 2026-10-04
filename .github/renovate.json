@@ -16,6 +16,11 @@
 	"lockFileMaintenance": { "enabled": true, "automerge": true },
 	"packageRules": [
 		{
+			"description": "chokidar v5 is ESM-only; this package publishes CommonJS (cjs/) and is consumed through require() by jest-progress-tracker. Lift when the CJS contract changes.",
+			"matchPackageNames": ["chokidar"],
+			"allowedVersions": "<5"
+		},
+		{
 			"description": "devDependencies and GitHub Actions carry no published surface, so a green `code / all-checks` is the whole review. Majors stay manual either way.",
 			"matchDepTypes": ["devDependencies"],
 			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],
