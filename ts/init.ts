@@ -1,4 +1,4 @@
-import mkdirp from 'mkdirp'
+import fs from 'node:fs'
 import path from 'node:path'
 import { PROGRESS_FOLDER } from './constants'
 import { store } from './store'
@@ -8,6 +8,6 @@ import { store } from './store'
  * @param options optional options. Mostly for testing purpose.
  */
 export function init(options = { rootDir: '.' }) {
-	mkdirp.sync(path.join(options.rootDir, PROGRESS_FOLDER))
+	fs.mkdirSync(path.join(options.rootDir, PROGRESS_FOLDER), { recursive: true })
 	store.value.rootDir = options.rootDir
 }
