@@ -39,7 +39,7 @@
 		"watch": "vitest"
 	},
 	"dependencies": {
-		"chokidar": "^3.6.0",
+		"chokidar": "^4.0.0",
 		"global-store": "^1.0.0-beta.21",
 		"unpartial": "^1.0.7"
 	},
