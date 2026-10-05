@@ -1,6 +1,6 @@
 {
 	"name": "test-progress-tracker",
-	"version": "2.0.8",
+	"version": "2.0.9",
 	"description": "Keep track of test progress over time",
 	"homepage": "https://github.com/repobuddy/test-progress-tracker",
 	"bugs": {
