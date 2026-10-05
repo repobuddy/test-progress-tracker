@@ -1,5 +1,11 @@
 # test-progress-tracker
 
+## 2.0.9
+
+### Patch Changes
+
+- 8825580: Replace the `mkdirp` dependency with `fs.mkdirSync(..., { recursive: true })`.
+
 ## 2.0.8
 
 ### Patch Changes
